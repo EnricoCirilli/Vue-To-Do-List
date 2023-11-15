@@ -10,9 +10,9 @@
 </head>
 <body>
    <div id="app">
-    <div>
-        <h1 class="text-center w-100 p-3">TO LEARN LIST</h1>
-    </div>
+  
+        <h1 class="text-center w-100 p-3">{{header.toLocaleUpperCase()}}</h1>
+    
 <!-- input new todo -->
     <form class="input-group mb-3 w-75 p-3 mx-auto">
         <input  v-model="todo_text"  type="text" class="form-control" placeholder="what you need to learn next!" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -25,10 +25,6 @@
           <button @click.prevent="removeTodo(index)" class="btn btn-outline-secondary" type="button" id="button-addon2">x</button>
         </li>
       </ul>
-
-
-
-
 
    </div>
 

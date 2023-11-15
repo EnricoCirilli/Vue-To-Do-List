@@ -3,6 +3,7 @@ const { createApp } = Vue;
 const app = Vue.createApp({
     data() {
         return{
+            header: 'TOLEARN LIST',
             todo_text:'',
             todos: [
                 {text :'learn HTML'},
@@ -29,7 +30,8 @@ const app = Vue.createApp({
         // },
         removeTodo(index){
             this.todos.splice(index,1)
-        }
+        },
+       
     }
 
      
