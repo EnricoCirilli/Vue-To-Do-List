@@ -12,6 +12,7 @@ const app = Vue.createApp({
                  {text :'learn JavaScript'},
                  {text :'learn Vue Js'},
             ],
+            image:'images.jpeg'
         }
     },
     methods:{
