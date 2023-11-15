@@ -16,13 +16,13 @@
 <!-- input new todo -->
     <form class="input-group mb-3 w-75 p-3 mx-auto">
         <input  v-model="todo_text"  type="text" class="form-control" placeholder="what you need to learn next!" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button @click="addTodo()" class="btn btn-outline-secondary" type="button" id="button-addon2">Add todo!</button>
+        <button @click.prevent="addTodo()" class="btn btn-outline-secondary" type="button" id="button-addon2">Add todo!</button>
     </form>
     <!-- add or remove todos -->
     <ul v-for="(todo,index) in todos" :key="index" class="list-group mx-auto w-75 p-3">
         <li class="list-group-item d-flex justify-content-between align-items-center">
             {{ index +1}} {{ todo.text }}
-          <span class="badge bg-primary rounded-pill">x</span>
+          <button @click.prevent="removeTodo(index)" class="btn btn-outline-secondary" type="button" id="button-addon2">x</button>
         </li>
       </ul>
 

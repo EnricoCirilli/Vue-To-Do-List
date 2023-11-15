@@ -7,7 +7,7 @@ const app = Vue.createApp({
             todos: [
                 {text :'learn HTML'},
                 {text :'learn CSS'},
-                {text :'learn SleeepStudyRepeat'},
+                {text :'learn SleepStudyRepeat'},
                  {text :'learn JavaScript'},
                  {text :'learn Vue Js'},
             ],
@@ -19,6 +19,16 @@ const app = Vue.createApp({
                 text: this.todo_text,
             });
             this.todo_text='';
+        },
+        // removeTodo(){
+        //     this.todos.pop({
+        //         text: this.todo_text,
+        //     });
+        //     this.todo_text='';
+            
+        // },
+        removeTodo(index){
+            this.todos.splice(index,1)
         }
     }
 
