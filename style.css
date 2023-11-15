@@ -1,5 +1,11 @@
+#app{
+    background-color: lightyellow;
+    height: 100vh;
+   
+}
+
 h1{
-    background-color: yellowgreen;
+    background-color: lightgreen;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
