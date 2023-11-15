@@ -5,7 +5,9 @@ const app = Vue.createApp({
         return{
             todo_text:'',
             todos: [
-
+                {text :'learn HTML'},
+                {text :'learn CSS'},
+                {text :'learn SleeepStudyRepeat'},
                  {text :'learn JavaScript'},
                  {text :'learn Vue Js'},
             ],
